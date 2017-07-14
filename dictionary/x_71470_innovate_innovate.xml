@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" label="Innovate" max_length="40" name="x_71470_innovate_innovate" type="collection">
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="idea implemented" max_length="40" name="u_boolean_1" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="process" label="idea type" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element label="Cost Saving" sequence="0" value="cost"/>
+                <element label="process improvement" sequence="1" value="process"/>
+                <element label="team building" sequence="2" value="team"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" mandatory="true" max_length="125" name="u_string_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" mandatory="true" max_length="1000" name="u_string_2" type="string"/>
+    </element>
+</database>
